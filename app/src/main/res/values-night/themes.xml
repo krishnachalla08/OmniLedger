@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.OmniLedger" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">#EB6135</item>
+    </style>
+
+    <style name="Theme.OmniLedger" parent="Base.Theme.OmniLedger" />
+    <style name="SplashScreen" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name = "android:windowBackground">@drawable/background_splashscreen</item>
+        <item name ="android:statusBarColor" >#EB6135</item>
+    </style>
+</resources>

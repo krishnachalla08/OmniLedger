@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".DetailActivity">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/detailTitle"
+            android:text="Transaction Details"
+            android:textAllCaps="true"
+            android:layout_marginTop="14dp"
+            android:textSize="24sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="12dp"
+            android:textColor="@color/themeColor"/>
+
+
+        <ImageView
+            android:id="@+id/detailImage"
+            android:layout_width="330dp"
+            android:layout_height="320dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+
+            android:src="@drawable/round_image_24" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:text="Bank:"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/themeColor"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:layout_toEndOf="@id/tv1"
+                android:padding="10dp"
+                android:text="Bank"
+                android:layout_gravity="center"
+                android:id="@+id/bankdetails"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tv2"
+                android:text="Amount:"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:layout_below="@id/tv1"
+                android:textColor="@color/themeColor"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/tv2"
+                android:padding="10dp"
+                android:text="Amount"
+                android:layout_below="@id/bankdetails"
+                android:layout_gravity="center"
+                android:id="@+id/amountdetails"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tv3"
+                android:text="Item:"
+                android:layout_below="@id/tv2"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/themeColor"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_below="@id/amountdetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/tv3"
+                android:padding="10dp"
+                android:text="Item"
+                android:layout_gravity="center"
+                android:id="@+id/itemdetails"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tv4"
+                android:text="Transaction:"
+                android:layout_below="@id/tv3"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/themeColor"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_below="@id/itemdetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/tv4"
+                android:padding="10dp"
+                android:text="Transaction"
+                android:layout_gravity="center"
+                android:id="@+id/transdetails"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tv5"
+                android:text="Time:"
+                android:layout_below="@id/tv4"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/themeColor"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_below="@id/transdetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/tv5"
+                android:padding="10dp"
+                android:text="Date and time"
+                android:layout_gravity="center"
+                android:id="@+id/datedetails"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tv6"
+                android:text="Location:"
+                android:layout_below="@id/tv5"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/themeColor"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_below="@id/datedetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/tv6"
+                android:padding="10dp"
+                android:text="Location"
+                android:layout_gravity="center"
+                android:id="@+id/locdetails"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "975242510815",
+    "project_id": "omniledger-3f550",
+    "storage_bucket": "omniledger-3f550.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:975242510815:android:86d89fdfaaa6a8184d446a",
+        "android_client_info": {
+          "package_name": "com.example.omniledger"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEXP6USsCfxsTP4GpAUkapk57dq0Num7s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

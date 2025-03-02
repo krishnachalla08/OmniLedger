@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".CameraActivity">
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transaction Details"
+            android:textColor="#EB6135"
+            android:textSize="30dp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toTopOf="@+id/textInputBank"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputBank"
+            style="@style/parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.115">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/editTextBank"
+                style="@style/modifiedEditText"
+                android:hint="Name of the Bank"
+                android:maxLines="1"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="151dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputItem"
+            style="@style/parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputBank">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/editTextItem"
+                style="@style/modifiedEditText"
+                android:hint="Enter Item Type"
+                android:maxLines="1"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@+id/editTextDate"
+                tools:layout_editor_absoluteX="10dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputAmount"
+            style="@style/parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputItem">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/editTextAmount"
+                style="@style/modifiedEditText"
+                android:hint="Enter The Amount"
+                android:maxLines="1"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@+id/editTextDate"
+                tools:layout_editor_absoluteX="10dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- add RadioGroup which contain the many RadioButton-->
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:text="Select the Transaction Type: "
+            android:textColor="#EB6135"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textInputAmount" />
+
+        <RadioGroup
+            android:id="@+id/groupradio"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.0">
+
+            <!-- In RadioGroup create the 1 Radio Button-->
+            <!-- like this we will add some more Radio Button-->
+
+            <RadioButton
+                android:id="@+id/radia_id1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Debit"
+                android:textColor="@color/black"
+                android:layout_marginStart="10dp"
+
+                android:textSize="20dp" />
+
+
+            <RadioButton
+                android:textColor="@color/black"
+                android:id="@+id/radia_id2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Credit"
+                android:textSize="20dp" />
+        </RadioGroup>
+
+    <Button
+        android:id="@+id/capture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="capture"
+        android:textSize="20dp"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.476"
+
+        app:layout_constraintStart_toEndOf="@+id/iview"
+        app:layout_constraintTop_toBottomOf="@+id/groupradio"
+        app:layout_constraintVertical_bias="0.393" />
+
+    <TextView
+            android:id="@+id/jst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Upload the File:    "
+            android:textColor="#EB6135"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/capture"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/groupradio"
+            app:layout_constraintVertical_bias="0.065" />
+
+
+    <ImageView
+        android:id="@+id/iview"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/round_add_a_photo_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.164"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jst"
+        app:layout_constraintVertical_bias="0.147" />
+
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="Upload"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.443"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
